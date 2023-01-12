@@ -1,6 +1,8 @@
 package OOPS;
 
-public class InterfaceTest implements InterfaceMain{
+import java.beans.IntrospectionException;
+
+public class InterfaceTest implements InterfaceMain, Interface2 {
     @Override
     public void click() {
         System.out.println("Click");
