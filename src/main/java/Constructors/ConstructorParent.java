@@ -3,7 +3,7 @@ package Constructors;
 public class ConstructorParent extends Constructors{
 
     public ConstructorParent(int a, int b, int c){
-        super();
+        super(10.1f, 10);
         System.out.println(a+b+c);
     }
 

@@ -7,11 +7,11 @@ public class UnaryOperator {
         int a = 10;
         int b = 20;
 
-        ++a;
-        System.out.println("Pre-Increment ::: " + a); // 11
+        //++a;
+        System.out.println("Pre-Increment ::: " + (++a)); // 11
 
-        a++;
-        System.out.println("Pre-Increment ::: " + a); //12
+        //a++;
+        System.out.println("Pre-Increment ::: " + (a++)); //12
         System.out.println("Post-Increment ::: " + (a++));
 
         --b;

@@ -5,7 +5,6 @@ public class Constructors {
     public Constructors(){
         System.out.println("Testing Constructor");
     }
-
     public Constructors(int a, int b){
         System.out.println(a+b);
     }
