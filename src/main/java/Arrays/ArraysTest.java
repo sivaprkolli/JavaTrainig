@@ -10,10 +10,7 @@ public class ArraysTest {
         //System.out.println(c[5]);
 
         System.out.println(s1.toCharArray());
-
-
-
-
+        
         for(int j=0; j<c.length; j++){
             System.out.println(c[j]);
         }
