@@ -17,8 +17,6 @@ public class ExceptionTest1 {
         } catch (ArithmeticException  e) {
             System.out.println("Exception Test");
             e.printStackTrace();
-        } catch (NullPointerException n){
-            System.out.println(n.toString());
         }
         System.out.println("Test Completed");
     }
