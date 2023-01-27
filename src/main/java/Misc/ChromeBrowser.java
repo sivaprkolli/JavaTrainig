@@ -1,11 +1,11 @@
 package Misc;
 
-public class ChromeBrowser extends Selenium implements WebDriver{
+public class ChromeBrowser extends Selenium implements WebDriverW {
 
     public static void main(String[] args) {
         Selenium selenium = new ChromeBrowser();
         Selenium selenium1 = new Selenium();
-        WebDriver driver = new ChromeBrowser();
+        WebDriverW driver = new ChromeBrowser();
         ChromeBrowser chromeBrowser = new ChromeBrowser();
         //WebDriver driver1 = new WebDriver();
 

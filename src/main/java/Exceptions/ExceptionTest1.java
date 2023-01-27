@@ -1,9 +1,5 @@
 package Exceptions;
 
-import Misc.ChromeBrowser;
-import Misc.WebDriver;
-
-import java.io.File;
 import java.io.FileInputStream;
 import java.io.FileNotFoundException;
 
