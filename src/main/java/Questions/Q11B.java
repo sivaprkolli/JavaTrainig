@@ -1,7 +1,5 @@
 package Questions;
 
-import TestOOps.ParentA;
-
 public class Q11B extends  Q11A{
     public int test(){
         System.out.println((int) 10.0f);

@@ -1,6 +1,5 @@
 package Questions;
 
-import ExceptionHandling.E3;
 
 public class Q8 {
     double j;

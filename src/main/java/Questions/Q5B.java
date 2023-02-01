@@ -1,7 +1,5 @@
 package Questions;
 
-import CallByValue.Child;
-
 public class Q5B extends Q5A {
 
     public Q5B() {
