@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Test Suite">
+    <test name="Test Automation">
+        <groups>
+            <run>
+                <include name="ExcludeTests"/>
+<!--                <exclude name="ExcludeTests"></exclude>-->
+
+            </run>
+        </groups>
+        <classes>
+            <class name="TestNGLearning.GroupsTest">
+                <methods>
+                    <include name="login"/>
+                    <include name="verifyBookingTicket"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+</suite>

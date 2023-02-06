@@ -15,6 +15,8 @@ public class TestB extends TestA{
         //Down casting
         TestA testA =  new TestB();
         TestB testb =  (TestB)testA;
+
+
         TestB testB = (TestB) testA; // new TestB();
 
 
