@@ -12,16 +12,8 @@ import org.testng.annotations.Test;
 import java.time.Duration;
 
 public class ParaBank {
-    WebDriver driver;
 
-    @AfterTest
-    public void killSession(){
-        driver.quit();
-    }
-    @Test
-    public void selectValueFromDropDown() throws InterruptedException {
-        WebDriverManager.chromedriver().setup();
-        driver = new ChromeDriver();
+    public void openAnAccount(WebDriver driver, String email, String password) throws InterruptedException {
         driver.get("https://parabank.parasoft.com/parabank/index.htm");
         driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(30));
 

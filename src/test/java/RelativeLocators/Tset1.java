@@ -49,19 +49,22 @@ public class Tset1 {
     @Test
     public void rightOfMehtod(){
         driver.get("https://fast.com/");
-        wait.until(ExpectedConditions.elementToBeClickable(By.cssSelector("span[class$='oc-icon-refresh']")));
-        WebElement speed = driver.findElement(By.cssSelector(".speed-left-container"));
-        WebElement speedText = driver.findElement(with(By.tagName("div")).toRightOf(speed));
-        speedText.click();
+        wait.until(ExpectedConditions.presenceOfElementLocated(By.cssSelector("div[role='img'][class^='logo']")));
+
+        WebElement speedResult = driver.findElement(By.cssSelector("div[class^='speed-results-container']"));
+        WebElement refreshButton = driver.findElement(with(By.tagName("div")).toRightOf(speedResult));
+        refreshButton.click();
     }
 
     @Test
     public void leftOfMehtod(){
         driver.get("https://fast.com/");
         wait.until(ExpectedConditions.elementToBeClickable(By.cssSelector("span[class$='oc-icon-refresh']")));
-        WebElement speed = driver.findElement(By.cssSelector(".speed-right-container"));
-        WebElement speedText = driver.findElement(with(By.tagName("span")).toLeftOf(speed));
-        System.out.println(speedText.getText());
+
+        WebElement refreshIcon = driver.findElement(By.cssSelector(".speed-right-container"));
+        WebElement speedResultText = driver.findElement(with(By.tagName("span")).toLeftOf(refreshIcon));
+        String speed = speedResultText.getText();
+        System.out.println("Speed result === " + speed );
     }
 
 }
