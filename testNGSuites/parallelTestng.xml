@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="All Test Suite" parallel="tests">
+    <test verbose="2" preserve-order="true" name="ChromeTest">
+        <classes>
+            <class name="TestNGLearning.ParallelTestingBrowsers">
+                <methods>
+                    <include name="chromeTest"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+
+    <test verbose="2" preserve-order="true" name="FirefoxTest">
+        <classes>
+            <class name="TestNGLearning.ParallelTestingBrowsers">
+                <methods>
+                    <include name="firefoxTest"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+
+    <test verbose="2" preserve-order="true" name="SafariTest">
+        <classes>
+            <class name="TestNGLearning.ParallelTestingBrowsers">
+                <methods>
+                    <include name="safariTest"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+
+    <test verbose="2" preserve-order="true" name="EdgeTest">
+        <classes>
+            <class name="TestNGLearning.ParallelTestingBrowsers">
+                <methods>
+                    <include name="edgeTest"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+</suite>
