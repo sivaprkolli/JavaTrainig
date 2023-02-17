@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="All Test Suite" parallel="tests">
+
+    
+    <test verbose="2" preserve-order="true" name="Selenium">
+        <parameter name="name" value="Joe"></parameter>
+        <parameter name="id" value="1"></parameter>
+        <groups>
+            <run>
+                <include name="Regression" />
+            </run>
+        </groups>
+        <classes>
+            <class name="TestNGLearning.UnderStandTestNG1"/>
+        </classes>
+    </test>
+
+
+    <test verbose="2" preserve-order="true" name="Appium">
+        <parameter name="name" value="David"></parameter>
+        <parameter name="id" value="100"></parameter>
+        <groups>
+            <run>
+                <include name="Smoke" />
+                <exclude name="Bug"></exclude>
+            </run>
+        </groups>
+        <classes>
+            <class name="TestNGLearning.UnderStandTestNG2"/>
+        </classes>
+    </test>
+</suite>
