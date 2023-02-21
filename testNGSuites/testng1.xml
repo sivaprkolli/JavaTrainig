@@ -3,7 +3,7 @@
 <suite name="All Test Suite">
     <test verbose="2" preserve-order="true" name="Simple TestNG">
         <classes>
-            <class name="TestNGLearning.SimpleTest"></class>
+            <class name="TNGLearning.SimpleTest"></class>
         </classes>
     </test>
 </suite>

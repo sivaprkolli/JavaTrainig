@@ -10,7 +10,7 @@
             </run>
         </groups>
         <classes>
-            <class name="TestNGLearning.GroupsTest">
+            <class name="TNGLearning.GroupsTest">
                 <methods>
                     <include name="login"/>
                     <include name="verifyBookingTicket"/>

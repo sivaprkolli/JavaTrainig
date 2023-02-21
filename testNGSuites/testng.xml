@@ -12,7 +12,7 @@
             </run>
         </groups>
         <classes>
-            <class name="TestNGLearning.UnderStandTestNG1"/>
+            <class name="TNGLearning.UnderStandTestNG1"/>
         </classes>
     </test>
 
@@ -27,7 +27,7 @@
             </run>
         </groups>
         <classes>
-            <class name="TestNGLearning.UnderStandTestNG2"/>
+            <class name="TNGLearning.UnderStandTestNG2"/>
         </classes>
     </test>
 </suite>

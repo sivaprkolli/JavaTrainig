@@ -6,7 +6,7 @@
         <parameter name="userName" value="siva"></parameter>
         <parameter name="password" value="siva"></parameter>
         <classes>
-            <class name="TestNGLearning.TestNGParameterization"></class>
+            <class name="TNGLearning.TestNGParameterization"></class>
         </classes>
         
     </test>

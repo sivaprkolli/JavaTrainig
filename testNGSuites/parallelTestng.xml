@@ -3,7 +3,7 @@
 <suite name="All Test Suite" parallel="tests">
     <test verbose="2" preserve-order="true" name="ChromeTest">
         <classes>
-            <class name="TestNGLearning.ParallelTestingBrowsers">
+            <class name="TNGLearning.ParallelTestingBrowsers">
                 <methods>
                     <include name="chromeTest"/>
                 </methods>
@@ -13,7 +13,7 @@
 
     <test verbose="2" preserve-order="true" name="FirefoxTest">
         <classes>
-            <class name="TestNGLearning.ParallelTestingBrowsers">
+            <class name="TNGLearning.ParallelTestingBrowsers">
                 <methods>
                     <include name="firefoxTest"/>
                 </methods>
@@ -23,7 +23,7 @@
 
     <test verbose="2" preserve-order="true" name="SafariTest">
         <classes>
-            <class name="TestNGLearning.ParallelTestingBrowsers">
+            <class name="TNGLearning.ParallelTestingBrowsers">
                 <methods>
                     <include name="safariTest"/>
                 </methods>
@@ -33,7 +33,7 @@
 
     <test verbose="2" preserve-order="true" name="EdgeTest">
         <classes>
-            <class name="TestNGLearning.ParallelTestingBrowsers">
+            <class name="TNGLearning.ParallelTestingBrowsers">
                 <methods>
                     <include name="edgeTest"/>
                 </methods>

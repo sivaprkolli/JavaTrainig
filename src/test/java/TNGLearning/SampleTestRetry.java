@@ -1,4 +1,4 @@
-package TestNGLearning;
+package TNGLearning;
 
 import org.testng.Assert;
 import org.testng.annotations.Test;
