@@ -9,6 +9,7 @@ import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
 import org.testng.annotations.Test;
 
+import java.time.Duration;
 import java.util.HashMap;
 import java.util.Map;
 
@@ -60,7 +61,15 @@ public class MobileEmulation {
         WebDriverManager.chromedriver().setup();
         ChromeDriver driver = new ChromeDriver();
         driver.get("https://www.google.co.uk");
-        driver.manage().window().setSize(new Dimension(400, 800));
+        driver.manage().window().setSize(new Dimension(412, 700));
+        driver.get("https://www.discounttire.com/");
+        driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(30));
+        driver.findElement(By.xpath("//*[text()='Continue']")).click();
+        Thread.sleep(5000);
+        //driver.findElement(By.xpath("//*[@data-icon=\"bars\"][name()='svg']")).click();
+        driver.findElement(By.xpath("//a[@href=\"#mobile-menu\"]")).click();
+
+        driver.findElement(By.xpath("//a[text()='My Vehicles']")).click();
     }
 
     // Working
